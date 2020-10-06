@@ -1,0 +1,26 @@
+.checkout{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    background-color: white;
+}
+
+.checkout__left{
+    display: flex;
+    flex: 0.65;
+    flex-direction: column;
+    background-color: red;
+}
+
+.checkout__right{
+    display: flex;
+    flex: 0.35;
+    flex-direction: column;
+    background-color: blue;
+}
+
+.checkout__rightCart{
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+}

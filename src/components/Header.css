@@ -10,7 +10,7 @@
     z-index: 100;
 }
 
-.header > img{
+.header > a > img{
     object-fit: fill;
     width: 180px;
     padding-left: 10px;
@@ -92,14 +92,16 @@
 
 .header__rightCart > .MuiSvgIcon-root{
     font-size: 45px;
+    color:white;
 }
 
 .header__rightCart > h2{
-    font-weight: 900;
+    font-weight: 700;
     font-size: 30px;
     margin-left: 10px;
     color: rgb(243, 168, 71);
 }
+
 
 /* HOVERS */
 

@@ -43,6 +43,7 @@
 
 .product__rating > .MuiSvgIcon-root{
     color:gold;
+    margin:10px 0;
 }
 
 .product__info > img {
