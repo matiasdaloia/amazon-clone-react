@@ -3,20 +3,31 @@
     justify-content: space-between;
     flex: 1;
     background-color: white;
+    padding: 20px;
+}
+
+.checkout__title{
+    margin-right: 10px;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    font-size: 2rem;
+}
+
+.checkout__ad{
+    width: 100%;
+    margin-bottom: 15px;
 }
 
 .checkout__left{
     display: flex;
     flex: 0.65;
     flex-direction: column;
-    background-color: red;
 }
 
 .checkout__right{
     display: flex;
     flex: 0.35;
     flex-direction: column;
-    background-color: blue;
 }
 
 .checkout__rightCart{
@@ -24,3 +35,4 @@
     flex-direction: column;
     background-color: gainsboro;
 }
+
