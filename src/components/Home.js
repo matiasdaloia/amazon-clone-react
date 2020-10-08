@@ -13,42 +13,48 @@ function Home() {
         />
         <div className="home__row">
           <Product
+            id="12345"
             title="Hello world"
-            price="19.99"
+            price={19.99}
             img="https://images-na.ssl-images-amazon.com/images/I/51T-sMqSMiL._SY291_BO1,204,203,200_QL40_ML2_.jpg"
             rating={5}
           />
           <Product
+            id="123456"
             title="Hello world"
-            price="19.99"
+            price={19.99}
             img="https://images-na.ssl-images-amazon.com/images/I/51T-sMqSMiL._SY291_BO1,204,203,200_QL40_ML2_.jpg"
             rating={3}
           />
           <Product
+            id="12341235"
             title="Hello world"
-            price="19.99"
+            price={19.99}
             img="https://images-na.ssl-images-amazon.com/images/I/51T-sMqSMiL._SY291_BO1,204,203,200_QL40_ML2_.jpg"
             rating={4}
           />
         </div>
         <div className="home__row">
           <Product
+            id="1231231545"
             title="Hello world"
-            price="19.99"
+            price={19.99}
             img="https://images-na.ssl-images-amazon.com/images/I/51T-sMqSMiL._SY291_BO1,204,203,200_QL40_ML2_.jpg"
             rating={5}
           />
           <Product
+            id="12343335"
             title="Hello world"
-            price="19.99"
+            price={19.99}
             img="https://images-na.ssl-images-amazon.com/images/I/51T-sMqSMiL._SY291_BO1,204,203,200_QL40_ML2_.jpg"
             rating={5}
           />
         </div>
         <div className="home__row">
           <Product
+            id="12567345"
             title="Hello world"
-            price="19.99"
+            price={19.99}
             img="https://images-na.ssl-images-amazon.com/images/I/51T-sMqSMiL._SY291_BO1,204,203,200_QL40_ML2_.jpg"
             rating={5}
           />

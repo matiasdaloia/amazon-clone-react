@@ -5,9 +5,19 @@ import { useStateValue } from "../context/StateProvider";
 
 function Subtotal() {
   const [{ basket }, dispatch] = useStateValue();
-  const [subtotal, setSubTotal] = useState(0);
 
-  useEffect(() => {}, [basket]);
+  // State for the subtotal
+  const [subtotal, setSubtotal] = useState();
+
+  // Function to get the subtotal
+  const getSubtotal = (basket) => {
+    setSubtotal(basket?.reduce((amount, item) => item.price + amount, 0));
+  };
+
+  // Each time basket changes, it re renders the subtotal
+  useEffect(() => {
+    getSubtotal(basket);
+  }, [basket]);
 
   return (
     <div className="subtotal">
@@ -15,7 +25,7 @@ function Subtotal() {
         renderText={(value) => (
           <>
             <p>
-              Subtotal ({basket.length} items): <strong>0</strong>
+              Subtotal ({basket.length} items): <strong>{value}</strong>
             </p>
             <small className="subtotal__gift">
               <input type="checkbox" />
@@ -24,7 +34,7 @@ function Subtotal() {
           </>
         )}
         decimalScale={2}
-        value={0}
+        value={subtotal}
         displayType={"text"}
         thousandSeparator={true}
         prefix={"$"}

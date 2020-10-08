@@ -7,6 +7,7 @@ import { useStateValue } from "../context/StateProvider";
 
 function Header() {
   const [{ basket }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
 
   return (
     <div className="header">
@@ -22,19 +23,22 @@ function Header() {
         <SearchIcon />
       </div>
       <div className="header__right">
-        <div className="header__rightAccInfo">
-          <p>Hello, Matias</p>
-          <p>
-            <span>Account & Lists</span>
-          </p>
-        </div>
+        <Link className="router_links" to="/login">
+          <div className="header__rightAccInfo">
+            {user ? <p>{`Hello, ${user.email}`}</p> : <p>Hello,Sign In</p>}
+            {/* <p>Hello, Matias</p>
+            <p>
+              <span>Account & Lists</span>
+            </p> */}
+          </div>
+        </Link>
         <div className="header__rightOrders">
           <p>Returns</p>
           <p>
             <span>& Orders</span>
           </p>
         </div>
-        <Link className="basket__item" to="/checkout">
+        <Link className="router_links" to="/checkout">
           <div className="header__rightCart">
             <ShoppingBasketIcon />
             <h2>{basket.length}</h2>
